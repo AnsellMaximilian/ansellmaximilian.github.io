@@ -1,0 +1,25 @@
+{
+  "name": "ansellmaximilian.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsc & sass src/sass/main.scss dist/css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnsellMaximilian/ansellmaximilian.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnsellMaximilian/ansellmaximilian.github.io/issues"
+  },
+  "homepage": "https://github.com/AnsellMaximilian/ansellmaximilian.github.io#readme",
+  "dependencies": {
+    "sass": "^1.35.1",
+    "typescript": "^4.3.5"
+  }
+}
