@@ -1,5 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="1920" height="1041.6" version="1.1" viewBox="0 0 508 275.59" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <style>
+        @keyframes light-patrol {
+            from, to {
+                transform: rotate(0deg);
+            }
+            25%{
+                transform: rotate(-10deg);
+            }
+            50% {
+                transform: rotate(35deg);
+            }
+            60%{
+                transform: rotate(10deg);
+            }
+            90% {
+                transform: rotate(-10deg);
+            }
+        }
+        #hero-beam {
+            animation: light-patrol 15s infinite;
+            transform-origin: 65% 90%;
+        }
+    </style>
  <defs>
   <linearGradient id="linearGradient859">
    <stop stop-color="#fd5" offset="0"/>
@@ -40,7 +63,7 @@
   <rect transform="rotate(90)" x="87.496" y="-343.98" width="106.26" height="34.152" stroke-width=".91833"/>
   <rect transform="rotate(90)" x="76.157" y="-296.29" width="117.6" height="47.004" stroke-width="1.1334"/>
  </g>
- <g>
+ <g id="hero-beam">
   <path d="m303.63 37.598a31.26 40.537 77.951 0 1-33.254 29.495 31.26 40.537 77.951 0 1-42.398-13.347l72.008 191.22 15.984-3.4119z" fill="#fafb9b" opacity=".46845" stroke-width="2.8579"/>
   <path d="m257.28 5.9592a31.26 40.537 77.951 0 0-33.076 39.024 31.26 40.537 77.951 0 0 46.169 22.11 31.26 40.537 77.951 0 0 33.119-39.033 31.26 40.537 77.951 0 0-46.169-22.11 31.26 40.537 77.951 0 0-0.0426 0.00907zm5.5846 13.204 3.898-0.83199-2.9671 34.945-3.8605 0.82399zm-14.582 7.2187 1.0693 5.0099-10.33 9.1949 13.177 4.141 1.0693 5.0099-18.867-6.1022-0.84947-3.9799zm25.635-5.4717 18.867 6.1022 0.84947 3.9799-14.732 13.274-1.0693-5.0099 10.334-9.1774-13.18-4.1585z" fill="#ffffab" opacity=".80097" stroke-width="1.3691"/>
  </g>
