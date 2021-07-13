@@ -647,6 +647,7 @@ h3 {
 }
 #projects .project-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 #projects .project-list .card {

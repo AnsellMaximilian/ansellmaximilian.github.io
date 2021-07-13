@@ -39,6 +39,7 @@
   }
   .project-list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     .card {
       background-color: $background-color;
