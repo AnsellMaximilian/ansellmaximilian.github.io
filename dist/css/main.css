@@ -658,6 +658,30 @@ h3 {
 }
 #projects .project-list .card__header {
   padding: 1.5rem;
+  position: relative;
+}
+#projects .project-list .card__header .more-info {
+  position: absolute;
+  cursor: pointer;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#projects .project-list .card__header .more-info:hover > .more-info__description {
+  opacity: 1;
+  display: block;
+}
+#projects .project-list .card__header .more-info__description {
+  position: absolute;
+  transition: all 0.1s;
+  border-radius: 1rem;
+  display: none;
+  right: 0;
+  top: -0.1rem;
+  width: 15rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #1a1a1a;
+  padding: 1rem;
 }
 #projects .project-list .card__thumbnail img {
   width: 100%;
