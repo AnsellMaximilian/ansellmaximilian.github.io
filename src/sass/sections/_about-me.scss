@@ -1,0 +1,49 @@
+#about-me {
+  background-color: $background-color;
+  text-align: center;
+
+  .hero {
+    &__img {
+      width: 100%;
+    }
+
+    &__text {
+      width: 48.5625rem;
+      max-width: 100%;
+      margin: map-get($map: $spacings, $key: 3) auto
+        map-get($map: $spacings, $key: 7);
+      h1 {
+        font-size: 4rem;
+        margin-bottom: $spacing3;
+      }
+      p {
+        font-size: 1.5rem;
+      }
+      @include breakpoint-down(small) {
+        h1 {
+          font-size: 1.5rem;
+        }
+        p {
+          font-size: 1rem;
+        }
+      }
+    }
+
+    &__btn {
+      display: inline-block;
+      background-color: $secondary-color;
+      color: $secondary-text-color;
+      padding: 1.25rem 1.875rem;
+      font-size: 1.5rem;
+      border-radius: 100rem;
+      font-weight: bold;
+      @include breakpoint-down(small) {
+        padding: 0.875rem 1.5;
+        font-size: 1rem;
+      }
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+  }
+}

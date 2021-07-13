@@ -1,16 +1,84 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -20,8 +88,17 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
@@ -29,16 +106,20 @@ body {
   line-height: 1;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
   content: "";
   content: none;
 }
@@ -51,10 +132,16 @@ table {
 a {
   color: inherit;
   text-decoration: none;
+  cursor: pointer;
 }
 
 * {
   box-sizing: border-box;
+}
+
+button {
+  border: none;
+  cursor: pointer;
 }
 
 :root {
@@ -167,8 +254,16 @@ body {
   margin-right: 1.25rem;
 }
 .mx-5 {
-  margin-left: 2.5rem;
-  margin-right: 2.5rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+.mx-6 {
+  margin-left: 1.75rem;
+  margin-right: 1.75rem;
+}
+.mx-7 {
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 .mb-1 {
   margin-bottom: 0.25rem;
@@ -183,7 +278,13 @@ body {
   margin-bottom: 1.25rem;
 }
 .mb-5 {
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+.mb-6 {
+  margin-bottom: 1.75rem;
+}
+.mb-7 {
+  margin-bottom: 2rem;
 }
 .mt-1 {
   margin-top: 0.25rem;
@@ -458,38 +559,50 @@ h3 {
   width: 300px;
 }
 
-.hero.coloured {
-  background-color: rgba(26, 26, 26, 0.75);
+#about-me {
+  background-color: black;
+  text-align: center;
 }
-.hero .cta {
-  font-size: 1.25rem;
+#about-me .hero__img {
+  width: 100%;
+}
+#about-me .hero__text {
+  width: 48.5625rem;
+  max-width: 100%;
+  margin: 1rem auto 2rem;
+}
+#about-me .hero__text h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+#about-me .hero__text p {
+  font-size: 1.5rem;
+}
+@media (max-width: 39.9375rem) {
+  #about-me .hero__text h1 {
+    font-size: 1.5rem;
+  }
+  #about-me .hero__text p {
+    font-size: 1rem;
+  }
+}
+#about-me .hero__btn {
+  display: inline-block;
+  background-color: white;
+  color: #1a1a1a;
+  padding: 1.25rem 1.875rem;
+  font-size: 1.5rem;
+  border-radius: 100rem;
   font-weight: bold;
-  padding: 0.75rem 2.25rem;
-  box-shadow: none;
-  border-radius: 2rem;
 }
 @media (max-width: 39.9375rem) {
-  .hero .cta {
-    font-size: 1rem;
-    padding: 0.5rem 2rem;
-  }
-}
-.hero__title {
-  font-size: 2.75rem;
-  font-weight: 700;
-}
-@media (max-width: 39.9375rem) {
-  .hero__title {
-    font-size: 2rem;
-  }
-}
-.hero__subtitle {
-  font-size: 1.35rem;
-}
-@media (max-width: 39.9375rem) {
-  .hero__subtitle {
+  #about-me .hero__btn {
+    padding: 0.875rem 1.5;
     font-size: 1rem;
   }
+}
+#about-me .hero__btn:hover {
+  opacity: 0.9;
 }
 
 /*# sourceMappingURL=main.css.map */
