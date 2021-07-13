@@ -56,6 +56,9 @@
           right: 5%;
           top: 50%;
           transform: translateY(-50%);
+          i {
+            animation: pulse 1s infinite;
+          }
           &:hover {
             & > .more-info__description {
               opacity: 1;

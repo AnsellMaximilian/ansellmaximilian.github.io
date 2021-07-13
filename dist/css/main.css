@@ -1,3 +1,11 @@
+@keyframes pulse {
+  from, to {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
 html,
 body,
 div,
@@ -624,6 +632,9 @@ h3 {
   right: 5%;
   top: 50%;
   transform: translateY(-50%);
+}
+#projects .project-list .card__header .more-info i {
+  animation: pulse 1s infinite;
 }
 #projects .project-list .card__header .more-info:hover > .more-info__description {
   opacity: 1;
