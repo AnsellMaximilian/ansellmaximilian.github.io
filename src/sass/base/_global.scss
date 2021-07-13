@@ -4,6 +4,10 @@
   color: $primary-text-color;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   line-height: 1.3;
 }

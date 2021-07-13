@@ -158,6 +158,10 @@ button {
   color: white;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   line-height: 1.3;
 }
