@@ -655,6 +655,9 @@ h3 {
   width: 25rem;
   max-width: 100%;
 }
+#projects .project-list .card__header {
+  padding: 1.5rem;
+}
 #projects .project-list .card__thumbnail img {
   width: 100%;
 }
