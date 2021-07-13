@@ -46,8 +46,7 @@
       border-radius: 1rem;
       width: 25rem;
       max-width: 100%;
-      margin: 0 map-get($map: $spacings, $key: 5)
-        map-get($map: $spacings, $key: 5);
+      margin: 0 map-get($map: $spacings, $key: 5) 3rem;
       @include breakpoint-down(small) {
         margin: 0 0 map-get($map: $spacings, $key: 5);
       }
