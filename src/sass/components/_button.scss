@@ -1,23 +1,13 @@
 .btn {
   padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  box-shadow: $box-shadow;
-  &:hover {
-    filter: brightness(0.9);
-  }
-  &-primary,
-  &-secondary {
+  font-size: 1rem;
+  border-radius: 100rem;
+  &--secondary {
+    background-color: $secondary-color;
+    color: $secondary-text-color;
     font-weight: bold;
-    text-transform: uppercase;
   }
-  &-primary {
-    background-color: $primary-color;
-    color: $primary-contrast-text-color;
-    &-negative {
-      color: $primary-color;
-      background-color: $primary-contrast-text-color;
-    }
+  &:hover {
+    opacity: 0.9;
   }
 }

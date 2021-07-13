@@ -534,25 +534,16 @@ h3 {
 
 .btn {
   padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.25);
+  font-size: 1rem;
+  border-radius: 100rem;
+}
+.btn--secondary {
+  background-color: white;
+  color: #1a1a1a;
+  font-weight: bold;
 }
 .btn:hover {
-  filter: brightness(0.9);
-}
-.btn-primary, .btn-secondary {
-  font-weight: bold;
-  text-transform: uppercase;
-}
-.btn-primary {
-  background-color: #1a1a1a;
-  color: white;
-}
-.btn-primary-negative {
-  color: #1a1a1a;
-  background-color: white;
+  opacity: 0.9;
 }
 
 .image-medium {
@@ -728,6 +719,20 @@ h3 {
   display: block;
   height: 0.25rem;
   flex: 1;
+}
+#projects .project-list .card__actions {
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#projects .project-list .card__actions a {
+  display: inline-block;
+  margin-left: 1rem;
+}
+#projects .project-list .card__actions a > img {
+  width: 2rem;
+  display: inline-block;
 }
 
 /*# sourceMappingURL=main.css.map */
