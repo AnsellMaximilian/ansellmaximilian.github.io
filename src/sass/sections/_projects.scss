@@ -48,6 +48,9 @@
       max-width: 100%;
       margin: 0 map-get($map: $spacings, $key: 5)
         map-get($map: $spacings, $key: 5);
+      @include breakpoint-down(small) {
+        margin: 0 0 map-get($map: $spacings, $key: 5);
+      }
       &__header {
         padding: 1.5rem;
         // text-align: left;
