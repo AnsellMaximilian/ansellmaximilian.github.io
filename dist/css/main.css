@@ -618,6 +618,15 @@ h3 {
   margin: 0 auto;
   margin-bottom: 2rem;
 }
+@media (max-width: 39.9375rem) {
+  #projects h2 {
+    font-size: 1.25rem;
+  }
+  #projects h2::after, #projects h2::before {
+    height: 0.25rem;
+    width: 2rem;
+  }
+}
 #projects h2::after, #projects h2::before {
   content: "";
   height: 0.5625rem;

@@ -9,6 +9,14 @@
     width: max-content;
     margin: 0 auto;
     margin-bottom: map-get($map: $spacings, $key: 7);
+    @include breakpoint-down(small) {
+      font-size: 1.25rem;
+      &::after,
+      &::before {
+        height: 0.25rem;
+        width: 2rem;
+      }
+    }
     &::after,
     &::before {
       content: "";
