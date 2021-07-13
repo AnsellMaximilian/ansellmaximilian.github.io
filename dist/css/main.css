@@ -621,6 +621,7 @@ h3 {
   border-radius: 1rem;
   width: 25rem;
   max-width: 100%;
+  margin: 0 1.5rem 1.5rem;
 }
 #projects .project-list .card__header {
   padding: 1.5rem;
@@ -652,8 +653,14 @@ h3 {
   color: #1a1a1a;
   padding: 1rem;
 }
+#projects .project-list .card__thumbnail {
+  margin-bottom: 1rem;
+}
 #projects .project-list .card__thumbnail img {
   width: 100%;
+  height: 13.138rem;
+  object-fit: cover;
+  object-position: top;
 }
 #projects .project-list .card__body .tech-stack-list {
   padding: 1.5rem;

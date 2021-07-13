@@ -46,6 +46,8 @@
       border-radius: 1rem;
       width: 25rem;
       max-width: 100%;
+      margin: 0 map-get($map: $spacings, $key: 5)
+        map-get($map: $spacings, $key: 5);
       &__header {
         padding: 1.5rem;
         // text-align: left;
@@ -80,8 +82,12 @@
         }
       }
       &__thumbnail {
+        margin-bottom: map-get($map: $spacings, $key: 3);
         img {
           width: 100%;
+          height: 13.138rem;
+          object-fit: cover;
+          object-position: top;
         }
       }
       &__body {
