@@ -1,0 +1,36 @@
+// FONT
+$font-size: 16px;
+$font-family: Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+  Helvetica Neue, sans-serif;
+
+// COLORS
+$primary-text-color: #3d3d3d;
+$dim-primary-text-color: #3d3d3d83;
+$primary-contrast-text-color: white;
+
+$background-color: white;
+$primary-color: #31e2b8;
+$primary-color-dim: #31e2b927;
+
+// SHADOWS
+$box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.25);
+
+// MARGINS AND PADDINGS
+$spacing1: 0.25rem;
+$spacing2: 0.5rem;
+$spacing3: 1rem; // 16px
+$spacing4: 1.25rem; // 20px
+$spacing5: 2.5rem;
+
+$spacings: (
+  1: 0.25rem,
+  2: 0.5rem,
+  3: 1rem,
+  4: 1.25rem,
+  5: 2.5rem,
+);
+
+$p1: 1.25rem;
+
+// BORDER RADIUS
+$border-radius: 10px;

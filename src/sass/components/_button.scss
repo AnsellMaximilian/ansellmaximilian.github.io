@@ -1,0 +1,23 @@
+.btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: $box-shadow;
+  &:hover {
+    filter: brightness(0.9);
+  }
+  &-primary,
+  &-secondary {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  &-primary {
+    background-color: $primary-color;
+    color: $primary-contrast-text-color;
+    &-negative {
+      color: $primary-color;
+      background-color: $primary-contrast-text-color;
+    }
+  }
+}
