@@ -1,7 +1,7 @@
 #about-me {
   background-color: $background-color;
   text-align: center;
-
+  padding-bottom: map-get($map: $spacings, $key: 7);
   .hero {
     &__img {
       width: 100%;

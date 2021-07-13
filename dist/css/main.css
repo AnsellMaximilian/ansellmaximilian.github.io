@@ -562,6 +562,7 @@ h3 {
 #about-me {
   background-color: black;
   text-align: center;
+  padding-bottom: 2rem;
 }
 #about-me .hero__img {
   width: 100%;
@@ -603,6 +604,93 @@ h3 {
 }
 #about-me .hero__btn:hover {
   opacity: 0.9;
+}
+
+#projects {
+  background-color: #1a1a1a;
+  text-align: center;
+  padding: 2rem 0;
+}
+#projects h2 {
+  font-size: 3rem;
+  position: relative;
+  width: max-content;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+#projects h2::after, #projects h2::before {
+  content: "";
+  height: 0.5625rem;
+  width: 5rem;
+  background-color: white;
+  position: absolute;
+  border-radius: 100rem;
+  top: 50%;
+}
+#projects h2::before {
+  left: -1rem;
+  transform: translate(-100%, -50%);
+  margin-right: 1rem;
+}
+#projects h2::after {
+  right: -1rem;
+  transform: translate(100%, -50%);
+}
+#projects .project-list {
+  display: flex;
+  justify-content: space-around;
+}
+#projects .project-list .card {
+  background-color: black;
+  border-radius: 1rem;
+  width: 25rem;
+  max-width: 100%;
+}
+#projects .project-list .card__thumbnail img {
+  width: 100%;
+}
+#projects .project-list .card__body .tech-stack-list {
+  padding: 1.5rem;
+}
+#projects .project-list .card__body .tech-stack-list .tech-stack-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+#projects .project-list .card__body .tech-stack-list .tech-stack-item:not(:last-child) {
+  margin-bottom: 1rem;
+}
+#projects .project-list .card__body .tech-stack-list .tech-stack-item:nth-child(odd) > *:not(:last-child) {
+  margin-right: 1.5rem;
+}
+#projects .project-list .card__body .tech-stack-list .tech-stack-item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+#projects .project-list .card__body .tech-stack-list .tech-stack-item:nth-child(even) > *:not(:last-child) {
+  margin-left: 1.5rem;
+}
+#projects .project-list .card__body .tech-stack-list .tech-stack-item__icon {
+  width: 3.0635rem;
+  height: 3.0635rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  background-color: white;
+}
+#projects .project-list .card__body .tech-stack-list .tech-stack-item__icon img {
+  width: 2rem;
+}
+#projects .project-list .card__body .tech-stack-list .tech-stack-item__bar {
+  background-color: white;
+  border-radius: 100rem;
+  display: block;
+  height: 0.25rem;
+  flex: 1;
 }
 
 /*# sourceMappingURL=main.css.map */
