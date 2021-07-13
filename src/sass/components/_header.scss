@@ -1,26 +1,87 @@
-.main-header {
-  background-color: $background-color;
+.header {
+  background-color: $primary-color;
+  color: $primary-text-color;
   z-index: 100;
   position: sticky;
   padding: 0.5rem 0;
   top: 0;
   width: 100%;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  &.open {
+    .navbar__nav-list {
+      height: auto;
+    }
+  }
   .navbar {
+    background-color: inherit;
+    color: inherit;
     @include flex($justify: flex-start, $wrap: wrap);
     @include breakpoint-down(small) {
       justify-content: space-between;
     }
-    position: relative;
-    .nav-brand {
+    &__brand {
       margin-right: 2rem;
     }
-    &.open {
-      .nav-list {
-        height: auto;
+    &__nav-list {
+      background-color: inherit;
+      color: inherit;
+      @include flex(flex-start, center);
+      @include breakpoint-down(small) {
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 100;
+        li {
+          width: 100%;
+          text-align: center;
+        }
+        a {
+          padding: 1rem;
+          width: 100%;
+          &:hover {
+            background-color: $secondary-color;
+            color: $secondary-text-color;
+          }
+        }
+        @include flex($dir: column);
+        height: 0;
+        overflow-y: hidden;
       }
-      .toggle-btn {
-        background-color: rgba($primary-color, 0.25);
+      a {
+        display: inline-block;
+        @include breakpoint-up(medium) {
+          margin-right: $spacing4;
+        }
+        font-weight: bold;
+      }
+    }
+    &__social-links {
+      z-index: 150;
+      background-color: $secondary-color;
+      clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
+      padding: 0.5rem;
+      padding-left: 4rem;
+      color: $secondary-text-color;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      a {
+        display: inline-block;
+        margin-left: $spacing4;
+        font-size: 1.5rem;
+      }
+      @include breakpoint-down(small) {
+        left: 0;
+        top: 100%;
+        right: auto;
+        bottom: auto;
+        padding: 0.5rem 0.5rem 4rem 0.5rem;
+        clip-path: polygon(0 0, 100% 0, 100% 70%, 0% 100%);
+        flex-direction: column;
+        a {
+          margin-left: 0;
+        }
       }
     }
     .toggle-btn {
@@ -43,35 +104,6 @@
       &:hover {
         background-color: rgba($primary-color, 0.25);
       }
-    }
-  }
-
-  .nav-list {
-    @include flex(flex-start, center);
-    @include breakpoint-down(small) {
-      width: 100%;
-      @include flex($dir: column);
-      height: 0;
-      overflow-y: hidden;
-      > a {
-        width: 100%;
-        padding: 1rem 0;
-        &:hover {
-          background-color: rgba(0, 0, 0, 0.025);
-        }
-      }
-    }
-    a {
-      display: inline-block;
-      @include breakpoint-up(medium) {
-        margin-right: $spacing4;
-      }
-      color: $dim-primary-text-color;
-      font-weight: bold;
-    }
-    a.active,
-    a:hover {
-      color: $primary-text-color;
     }
   }
 }

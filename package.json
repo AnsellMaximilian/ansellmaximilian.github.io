@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "tsc & sass src/sass/main.scss dist/css/main.css"
+    "build": "tsc & sass src/sass/main.scss dist/css/main.css",
+    "watch-sass": "sass --watch src/sass/main.scss dist/css/main.css",
+    "watch-ts": "tsc --watch"
   },
   "repository": {
     "type": "git",
