@@ -490,40 +490,7 @@ h3 {
 }
 
 .footer {
-  padding: 1.25rem 0;
-  margin-top: 3rem;
-  background-color: #1a1a1a;
-  color: white;
-}
-.footer__content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: nowrap;
-  flex-direction: row-reverse;
-}
-.footer__brand {
-  text-align: center;
-}
-.footer__socials {
-  font-size: 1.25rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: nowrap;
-  flex-direction: row;
-}
-.footer__social-item {
-  display: block;
-  margin-right: 1rem;
-}
-.footer__social-item:hover {
-  opacity: 0.75;
-}
-.footer__social-item > div {
-  height: 1.75rem;
-  width: 1.75rem;
-  margin-right: 0.5rem;
+  background-color: black;
 }
 
 .container {
