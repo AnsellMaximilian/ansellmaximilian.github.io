@@ -1,0 +1,48 @@
+#skills {
+  background-color: $background-color;
+  padding: map-get($map: $spacings, $key: 7) 0;
+  .skill-sections {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .skillset {
+    margin: 0 map-get($map: $spacings, $key: 5) 3rem;
+    &__header {
+      margin-bottom: 1rem;
+      h3 {
+        margin-bottom: 0.5rem;
+        font-size: 2rem;
+        text-align: center;
+        font-weight: normal;
+      }
+      span {
+        display: block;
+        background-color: $secondary-color;
+        height: 0.25rem;
+        width: 100%;
+        border-radius: 100rem;
+      }
+    }
+    &__list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+    &__item {
+      margin: 0 1rem 1rem 0;
+      @include flex($dir: column);
+      font-size: 1.5rem;
+      &__icon {
+        background-color: $secondary-color;
+        border-radius: 100rem;
+        width: 4rem;
+        height: 4rem;
+        @include flex;
+        margin-bottom: 0.25rem;
+        > img {
+          width: 2.625rem;
+        }
+      }
+    }
+  }
+}

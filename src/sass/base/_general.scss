@@ -197,19 +197,3 @@
     display: inline-block;
   }
 }
-
-// &b {
-//   &-1 {
-//     margin-bottom: $spacing1;
-//   }
-//   &-2 {
-//     margin-bottom: $spacing2;
-//   }
-//   &-3 {
-//     margin-bottom: $spacing3;
-//   }
-
-//   &-5 {
-//     @include spacing(margin, bottom, $spacing5);
-//   }
-// }
