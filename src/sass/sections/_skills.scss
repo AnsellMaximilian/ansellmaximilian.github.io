@@ -8,6 +8,9 @@
   }
   .skillset {
     margin: 0 map-get($map: $spacings, $key: 5) 3rem;
+    @include breakpoint-down(small) {
+      margin: 0 0 map-get($map: $spacings, $key: 5);
+    }
     &__header {
       margin-bottom: 1rem;
       h3 {
@@ -15,6 +18,9 @@
         font-size: 2rem;
         text-align: center;
         font-weight: normal;
+        @include breakpoint-down(small) {
+          font-size: 1rem;
+        }
       }
       span {
         display: block;
@@ -32,6 +38,9 @@
       margin: 0 1rem 1rem 0;
       @include flex($dir: column);
       font-size: 1.5rem;
+      @include breakpoint-down(small) {
+        font-size: 1rem;
+      }
       &__icon {
         background-color: $secondary-color;
         border-radius: 100rem;
@@ -41,6 +50,13 @@
         margin-bottom: 0.25rem;
         > img {
           width: 2.625rem;
+        }
+        @include breakpoint-down(small) {
+          width: 3.0635rem;
+          height: 3.0635rem;
+          > img {
+            width: 2rem;
+          }
         }
       }
     }

@@ -807,6 +807,11 @@ h3 {
 #skills .skillset {
   margin: 0 1.5rem 3rem;
 }
+@media (max-width: 39.9375rem) {
+  #skills .skillset {
+    margin: 0 0 1.5rem;
+  }
+}
 #skills .skillset__header {
   margin-bottom: 1rem;
 }
@@ -815,6 +820,11 @@ h3 {
   font-size: 2rem;
   text-align: center;
   font-weight: normal;
+}
+@media (max-width: 39.9375rem) {
+  #skills .skillset__header h3 {
+    font-size: 1rem;
+  }
 }
 #skills .skillset__header span {
   display: block;
@@ -836,6 +846,11 @@ h3 {
   flex-direction: column;
   font-size: 1.5rem;
 }
+@media (max-width: 39.9375rem) {
+  #skills .skillset__item {
+    font-size: 1rem;
+  }
+}
 #skills .skillset__item__icon {
   background-color: white;
   border-radius: 100rem;
@@ -850,6 +865,15 @@ h3 {
 }
 #skills .skillset__item__icon > img {
   width: 2.625rem;
+}
+@media (max-width: 39.9375rem) {
+  #skills .skillset__item__icon {
+    width: 3.0635rem;
+    height: 3.0635rem;
+  }
+  #skills .skillset__item__icon > img {
+    width: 2rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
