@@ -570,6 +570,70 @@ h3 {
   opacity: 0.9;
 }
 
+.slider-btn {
+  margin: 1rem 1rem 0;
+  text-decoration: none;
+  box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  border-radius: 10rem;
+  position: relative;
+  background-color: black;
+  color: white;
+  height: 4rem;
+  padding-left: 2rem;
+  padding-right: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+  transition: all 1s;
+}
+.slider-btn:hover {
+  text-decoration: underline;
+  padding-right: 2rem;
+  padding-left: 5rem;
+  background-color: white;
+  color: black;
+}
+.slider-btn:hover .link-item__icon {
+  left: 0;
+  right: 100%;
+  transform: translate(0, -50%);
+  background-color: black;
+  color: white;
+}
+.slider-btn__icon {
+  transition: all 1s;
+  background-color: white;
+  color: black;
+  font-size: 2rem;
+  position: absolute;
+  border-radius: 50%;
+  right: 0;
+  left: 100%;
+  top: 50%;
+  transform: translate(-100%, -50%);
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider-btn--blue {
+  background-color: #1a1a1a;
+}
+.slider-btn--blue:hover {
+  background-color: white;
+  color: #1a1a1a;
+}
+.slider-btn--blue:hover .link-item__icon {
+  background-color: #1a1a1a;
+  color: white;
+}
+.slider-btn--blue .link-item__icon {
+  color: #1a1a1a;
+}
+
 .image-medium {
   width: 300px;
 }

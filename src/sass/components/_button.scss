@@ -11,3 +11,70 @@
     opacity: 0.9;
   }
 }
+
+// Button with icon
+$slider-btn-height: 4rem;
+$slider-btn-animation-dur: 1s;
+.slider-btn {
+  margin: 1rem 1rem 0;
+  text-decoration: none;
+  box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  border-radius: 10rem;
+  position: relative;
+  background-color: black;
+  color: white;
+  height: $slider-btn-height;
+  padding-left: 2rem;
+  padding-right: $slider-btn-height + 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+  transition: all $slider-btn-animation-dur;
+  &:hover {
+    text-decoration: underline;
+    padding-right: 2rem;
+    padding-left: $slider-btn-height + 1rem;
+    background-color: white;
+    color: black;
+    .link-item__icon {
+      left: 0;
+      right: 100%;
+      transform: translate(0, -50%);
+      background-color: black;
+      color: white;
+    }
+  }
+  &__icon {
+    transition: all $slider-btn-animation-dur;
+    background-color: white;
+    color: black;
+    font-size: 2rem;
+    position: absolute;
+    border-radius: 50%;
+    right: 0;
+    left: 100%;
+    top: 50%;
+    transform: translate(-100%, -50%);
+    width: $slider-btn-height;
+    height: $slider-btn-height;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &--blue {
+    background-color: $primary-color;
+    &:hover {
+      background-color: white;
+      color: $primary-color;
+      .link-item__icon {
+        background-color: $primary-color;
+        color: white;
+      }
+    }
+    .link-item__icon {
+      color: $primary-color;
+    }
+  }
+}
