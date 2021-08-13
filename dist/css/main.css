@@ -380,6 +380,18 @@ h3 {
   top: 0;
   width: 100%;
 }
+.header.open .navbar .toggle-btn span {
+  margin: 0;
+}
+.header.open .navbar .toggle-btn span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.header.open .navbar .toggle-btn span:nth-child(2) {
+  opacity: 0;
+}
+.header.open .navbar .toggle-btn span:nth-child(3) {
+  transform: translateY(-10px) rotate(-45deg);
+}
 .header.open .navbar__nav-list {
   height: auto;
 }
@@ -484,6 +496,8 @@ h3 {
   display: none;
 }
 .header .navbar .toggle-btn > span {
+  transition: all 0.25s;
+  transform: rotate(0) translateY(0);
   height: 0.25rem;
   width: 1.5rem;
   display: block;

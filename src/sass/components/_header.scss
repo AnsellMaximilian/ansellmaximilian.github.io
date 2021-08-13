@@ -7,6 +7,24 @@
   top: 0;
   width: 100%;
   &.open {
+    .navbar {
+      .toggle-btn {
+        span {
+          margin: 0;
+          &:nth-child(1) {
+            // transform: translateY(18px) rotate(45deg);
+            transform: translateY(8px) rotate(45deg);
+          }
+          &:nth-child(2) {
+            opacity: 0;
+          }
+          &:nth-child(3) {
+            // transform: translateY(0) rotate(-45deg);
+            transform: translateY(-10px) rotate(-45deg);
+          }
+        }
+      }
+    }
     .navbar__nav-list {
       height: auto;
     }
@@ -89,6 +107,8 @@
       border-radius: 5px;
       padding: 0.5rem;
       > span {
+        transition: all 0.25s;
+        transform: rotate(0) translateY(0);
         &:not(:last-child) {
           margin-bottom: 0.3rem;
         }
