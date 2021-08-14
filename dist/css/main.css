@@ -719,6 +719,9 @@ h3 {
   text-align: center;
   padding-bottom: 2rem;
 }
+#about-me hr {
+  margin: 2rem 2rem 0;
+}
 #about-me .hero__img {
   width: 100%;
 }

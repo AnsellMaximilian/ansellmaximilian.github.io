@@ -2,6 +2,9 @@
   background-color: $background-color;
   text-align: center;
   padding-bottom: map-get($map: $spacings, $key: 7);
+  hr {
+    margin: 2rem 2rem 0;
+  }
   .hero {
     &__img {
       width: 100%;
@@ -45,6 +48,7 @@
         opacity: 0.9;
       }
     }
+
     &__links {
       margin-top: 1rem;
       display: flex;
