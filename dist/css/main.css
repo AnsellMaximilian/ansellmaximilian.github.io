@@ -826,6 +826,11 @@ h3 {
   padding: 1rem;
   font-weight: bold;
   cursor: pointer;
+  border-radius: 1rem;
+}
+#projects .project-list .card__body .tabs__item:first-child {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 #projects .project-list .card__body .tabs__item:hover, #projects .project-list .card__body .tabs__item.open {
   background-color: white;
@@ -882,6 +887,10 @@ h3 {
 }
 #projects .project-list .card__body .project-description {
   padding: 1.5rem;
+}
+#projects .project-list .card__body .project-description p {
+  margin-bottom: 1rem;
+  text-align: justify;
 }
 #projects .project-list .card__actions {
   padding: 1rem;
