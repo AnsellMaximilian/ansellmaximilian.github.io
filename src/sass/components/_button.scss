@@ -14,6 +14,7 @@
 
 // Button with icon
 $slider-btn-height: 4rem;
+$slider-btn-height-small: 3rem;
 $slider-btn-animation-dur: 1s;
 $slider-btn-border-size: 0.25rem;
 .slider-btn {
@@ -34,17 +35,6 @@ $slider-btn-border-size: 0.25rem;
   align-items: center;
   width: max-content;
   transition: all $slider-btn-animation-dur;
-  &--bordered {
-    border: $slider-btn-border-size $secondary-color solid;
-    .slider-btn__icon {
-      transform: translate(calc(-100% + #{$slider-btn-border-size}), -50%);
-    }
-    &:hover {
-      .slider-btn__icon {
-        transform: translate(0 - $slider-btn-border-size, -50%);
-      }
-    }
-  }
   &:hover {
     text-decoration: underline;
     padding-right: 2rem;
@@ -59,6 +49,32 @@ $slider-btn-border-size: 0.25rem;
       color: white;
     }
   }
+  @include breakpoint-down(small) {
+    height: $slider-btn-height-small;
+    padding-right: $slider-btn-height-small + 0.5rem;
+    padding-left: 1.5rem;
+    &:hover {
+      padding-left: $slider-btn-height-small + 0.5rem;
+      padding-right: 1.5rem;
+    }
+    .slider-btn__icon {
+      width: $slider-btn-height-small;
+      height: $slider-btn-height-small;
+      font-size: 1.5rem;
+    }
+  }
+  &--bordered {
+    border: $slider-btn-border-size $secondary-color solid;
+    .slider-btn__icon {
+      transform: translate(calc(-100% + #{$slider-btn-border-size}), -50%);
+    }
+    &:hover {
+      .slider-btn__icon {
+        transform: translate(0 - $slider-btn-border-size, -50%);
+      }
+    }
+  }
+
   &__icon {
     transition: all $slider-btn-animation-dur;
     background-color: white;
