@@ -15,8 +15,10 @@
 // Button with icon
 $slider-btn-height: 4rem;
 $slider-btn-animation-dur: 1s;
+$slider-btn-border-size: 0.25rem;
 .slider-btn {
-  margin: 1rem 1rem 0;
+  font-weight: bold;
+  // margin: 1rem 1rem 0;
   text-decoration: none;
   box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
   cursor: pointer;
@@ -32,13 +34,24 @@ $slider-btn-animation-dur: 1s;
   align-items: center;
   width: max-content;
   transition: all $slider-btn-animation-dur;
+  &--bordered {
+    border: $slider-btn-border-size $secondary-color solid;
+    .slider-btn__icon {
+      transform: translate(calc(-100% + #{$slider-btn-border-size}), -50%);
+    }
+    &:hover {
+      .slider-btn__icon {
+        transform: translate(0 - $slider-btn-border-size, -50%);
+      }
+    }
+  }
   &:hover {
     text-decoration: underline;
     padding-right: 2rem;
     padding-left: $slider-btn-height + 1rem;
     background-color: white;
     color: black;
-    .link-item__icon {
+    .slider-btn__icon {
       left: 0;
       right: 100%;
       transform: translate(0, -50%);
@@ -63,18 +76,34 @@ $slider-btn-animation-dur: 1s;
     justify-content: center;
     align-items: center;
   }
-  &--blue {
-    background-color: $primary-color;
+  &--red {
+    background-color: $red;
+    color: $primary-text-color;
     &:hover {
       background-color: white;
-      color: $primary-color;
-      .link-item__icon {
-        background-color: $primary-color;
+      color: $red;
+      .slider-btn__icon {
+        background-color: $red;
         color: white;
       }
     }
-    .link-item__icon {
-      color: $primary-color;
+    .slider-btn__icon {
+      color: $red;
+    }
+  }
+  &--blue {
+    background-color: $blue;
+    color: $primary-text-color;
+    &:hover {
+      background-color: white;
+      color: $blue;
+      .slider-btn__icon {
+        background-color: $blue;
+        color: white;
+      }
+    }
+    .slider-btn__icon {
+      color: $blue;
     }
   }
 }

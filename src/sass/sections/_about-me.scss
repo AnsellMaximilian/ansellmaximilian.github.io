@@ -45,5 +45,13 @@
         opacity: 0.9;
       }
     }
+    &__links {
+      margin-top: 2rem;
+      display: flex;
+      justify-content: center;
+      a {
+        margin: 0 1rem;
+      }
+    }
   }
 }
