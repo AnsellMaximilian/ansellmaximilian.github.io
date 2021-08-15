@@ -1,0 +1,60 @@
+@keyframes flag-wave {
+  from {
+    right: 20%;
+    transform: rotate(0) translate(0, 50%);
+    opacity: 0;
+    bottom: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+
+  50% {
+    right: 0;
+    opacity: 1;
+    bottom: 100%;
+    transform: rotate(20deg) translate(0, 50%);
+  }
+  60% {
+    opacity: 1;
+  }
+  75%,
+  to {
+    bottom: 0;
+    right: 0;
+    transform: rotate(0) translate(0, 50%);
+    opacity: 0;
+  }
+}
+
+.tooltip {
+  position: relative;
+  cursor: pointer;
+  &--flag {
+    &--indonesia {
+      &::before {
+        background: linear-gradient(to bottom, red, red 50%, white 50.1%);
+      }
+    }
+
+    &::before {
+      transition: transform 0.25s, right 0.25s;
+      animation: flag-wave 5s infinite;
+      content: "";
+      opacity: 0;
+      bottom: 100%;
+      right: 20%;
+      position: absolute;
+      width: 1rem;
+      height: 0.6rem;
+      transform: rotate(0) translate(0, 50%);
+    }
+    &:hover {
+      &::before {
+        opacity: 1;
+        transform: rotate(20deg) translate(0, 50%);
+        right: 0;
+      }
+    }
+  }
+}

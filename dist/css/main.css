@@ -679,6 +679,57 @@ h3 {
   width: 300px;
 }
 
+@keyframes flag-wave {
+  from {
+    right: 20%;
+    transform: rotate(0) translate(0, 50%);
+    opacity: 0;
+    bottom: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  50% {
+    right: 0;
+    opacity: 1;
+    bottom: 100%;
+    transform: rotate(20deg) translate(0, 50%);
+  }
+  60% {
+    opacity: 1;
+  }
+  75%, to {
+    bottom: 0;
+    right: 0;
+    transform: rotate(0) translate(0, 50%);
+    opacity: 0;
+  }
+}
+.tooltip {
+  position: relative;
+  cursor: pointer;
+}
+.tooltip--flag--indonesia::before {
+  background: linear-gradient(to bottom, red, red 50%, white 50.1%);
+}
+.tooltip--flag::before {
+  transition: transform 0.25s, right 0.25s;
+  animation: flag-wave 5s infinite;
+  content: "";
+  opacity: 0;
+  bottom: 100%;
+  right: 20%;
+  position: absolute;
+  width: 1rem;
+  height: 0.6rem;
+  transform: rotate(0) translate(0, 50%);
+}
+.tooltip--flag:hover::before {
+  opacity: 1;
+  transform: rotate(20deg) translate(0, 50%);
+  right: 0;
+}
+
 .section-title {
   font-size: 3rem;
   position: relative;
