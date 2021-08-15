@@ -371,6 +371,22 @@ h3 {
   font-size: 1.5rem;
 }
 
+@keyframes navbar-social-links-pulse-hor {
+  from, 40%, 60%, to {
+    margin-left: 1.25rem;
+  }
+  50% {
+    margin-left: 3rem;
+  }
+}
+@keyframes navbar-social-links-pulse-ver {
+  from, 40%, 60%, to {
+    margin-bottom: 0;
+  }
+  50% {
+    margin-bottom: 2rem;
+  }
+}
 .header {
   background-color: #1a1a1a;
   color: white;
@@ -474,6 +490,12 @@ h3 {
   display: inline-block;
   margin-left: 1.25rem;
   font-size: 1.5rem;
+  animation: navbar-social-links-pulse-hor 5s infinite linear;
+}
+@media (max-width: 39.9375rem) {
+  .header .navbar__social-links a {
+    animation-name: navbar-social-links-pulse-ver;
+  }
 }
 @media (max-width: 39.9375rem) {
   .header .navbar__social-links {
