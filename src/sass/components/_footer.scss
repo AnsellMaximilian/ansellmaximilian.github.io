@@ -1,15 +1,24 @@
 .footer {
   background-color: $primary-color;
-  padding: 2rem 0 1rem;
+  padding: 2rem 0 0;
+  &__brand {
+    text-align: center;
+    margin-bottom: 3rem;
+    img {
+      margin-bottom: 0.5rem;
+    }
+    p {
+      font-size: 1.25rem;
+    }
+  }
   &__content {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     .footer__socials {
-      @include flex($justify: flex-end);
+      @include flex($justify: center);
       a {
         display: inline-block;
-        &:not(:first-child) {
-          margin-left: 2rem;
-        }
+        transition: all 0.25s;
+        margin: 0 1rem;
         @include flex;
         background-color: $secondary-color;
         width: 3rem;
@@ -17,10 +26,16 @@
         color: $secondary-text-color;
         font-size: 1.5rem;
         border-radius: 100rem;
+        &:hover {
+          transform: scale(1.1);
+        }
       }
     }
   }
   &__copyright {
     text-align: center;
+    background-color: $background-color;
+    padding: 1rem 1rem;
+    font-weight: bold;
   }
 }
