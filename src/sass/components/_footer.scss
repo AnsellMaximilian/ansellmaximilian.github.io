@@ -14,20 +14,31 @@
   &__content {
     margin-bottom: 2rem;
     .footer__socials {
-      @include flex($justify: center);
+      @include flex($justify: center, $wrap: wrap);
       a {
-        display: inline-block;
         transition: all 0.25s;
+        display: block;
         margin: 0 1rem;
         @include flex;
-        background-color: $secondary-color;
-        width: 3rem;
-        height: 3rem;
-        color: $secondary-text-color;
-        font-size: 1.5rem;
-        border-radius: 100rem;
+        span:first-child {
+          @include breakpoint-down(small) {
+            display: none;
+          }
+        }
         &:hover {
           transform: scale(1.1);
+          text-decoration: underline;
+        }
+        span:last-child {
+          display: inline-block;
+          margin-left: 0.25rem;
+          @include flex;
+          background-color: $secondary-color;
+          width: 3rem;
+          height: 3rem;
+          color: $secondary-text-color;
+          font-size: 1.5rem;
+          border-radius: 100rem;
         }
       }
     }
