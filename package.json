@@ -8,7 +8,7 @@
     "build": "tsc & sass src/sass/main.scss dist/css/main.css",
     "watch-sass": "sass --watch src/sass/main.scss dist/css/main.css",
     "watch-ts": "tsc --watch",
-    "gulp:test": "gulp test"
+    "nunjucks:watch": "gulp nunjucks-watch"
   },
   "repository": {
     "type": "git",

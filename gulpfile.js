@@ -3,11 +3,6 @@ const data = require("gulp-data");
 const nunjucksRenderer = require("gulp-nunjucks-render");
 const templateData = require("./src/data/index");
 
-gulp.task("test", function (done) {
-  console.log("fag");
-  done();
-});
-
 gulp.task("nunjucks", function () {
   return gulp
     .src("src/templates/*.njk")
@@ -22,4 +17,8 @@ gulp.task("nunjucks", function () {
       })
     )
     .pipe(gulp.dest("dist"));
+});
+
+gulp.task("nunjucks-watch", function () {
+  gulp.watch("src/templates/**/*.njk", gulp.parallel(["nunjucks"]));
 });
