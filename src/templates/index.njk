@@ -1,0 +1,157 @@
+
+{% extends "layouts/main.njk" %}
+
+{% block content %}
+  <main>
+    <article id="about-me" class="hero">
+      <div class="container">
+        <img src="images//hero.svg" class="hero__img" alt="hero" />
+      </div>
+      <div class="hero__text container">
+        <h1>Ansell Maximilian</h1>
+        <p>
+          I am a self-taught website developer based in
+          <span class="tooltip tooltip--flag tooltip--flag--indonesia"
+            >Indonesia</span
+          >
+          currently majoring in Information Systems in college. I have
+          experience in designing, coding, and deploying websites using
+          different technologies. I am eager to learn and gain more experience
+          from the industry.
+        </p>
+      </div>
+      <a class="hero__btn" href="#projects">See Projects</a>
+      <hr />
+      <div class="hero__links">
+        <a
+          class="slider-btn slider-btn--red"
+          href="/Resume-Ansell-Maximilian.pdf"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <div class="slider-btn__icon">
+            <i class="fas fa-file-pdf"></i>
+          </div>
+          <div class="slider-btn__label"><span>Resume</span></div>
+        </a>
+        <a
+          class="slider-btn slider-btn--blue"
+          href="https://www.linkedin.com/in/ansell-maximilian/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <div class="slider-btn__icon">
+            <i class="fab fa-linkedin"></i>
+          </div>
+          <div class="slider-btn__label"><span>LinkedIn</span></div>
+        </a>
+      </div>
+    </article>
+    <article id="projects">
+      <div class="container">
+        <h2>Projects</h2>
+        <section class="project-list">
+          {% for project in projects %}
+            <article class="card">
+              <div class="card__header">
+                <h3>{{project.name}}</h3>
+                <p>{{project.type}}</p>
+                <div class="more-info">
+                  <i class="fas fa-info-circle"></i>
+                  <div class="more-info__description">
+                    {{project.description}}
+                  </div>
+                </div>
+              </div>
+              <div class="card__thumbnail">
+                <img
+                  src="images/projects/{{project.thumbnail.src}}"
+                  alt="{{ project.thumbnail.alt }}}"
+                />
+              </div>
+              <div class="card__body">
+                <div class="tabs">
+                  <div class="tabs__item" data-target="project-tech-stack">
+                    Project Stack
+                  </div>
+                  <div class="tabs__item" data-target="project-description">
+                    Description
+                  </div>
+                </div>
+                <div class="project-tech-stack tab-content">
+                  <h4>Technology Stack:</h4>
+                  <div class="tech-stack-list">
+                    {% for stackItem in project.stackItems %}
+                      <div class="tech-stack-item">
+                        <div class="tech-stack-item__icon">
+                            <img
+                              alt="{{ stackItem.name }} logo"
+                              src="{{ stackItem.icon }}"
+                            />
+                        </div>
+                          <div class="tech-stack-item__name">{{ stackItem.name }}</div>
+                          <span class="tech-stack-item__bar"></span>
+                      </div>
+                    {% endfor %}
+                  </div>
+                </div>
+                <div class="project-description tab-content">
+                  {% for longDescriptionItem in project.longDescriptionItems %}
+                    <p>{{longDescriptionItem}}</p>
+                  {% endfor %}
+                </div>
+              </div>
+              <div class="card__actions">
+                <a
+                  href="https://ansellmaximilian.github.io/dailee/"
+                  class="btn btn--secondary"
+                  target="_blank"
+                  rel="noreferrer"
+                  >Visit</a
+                >
+                <a
+                  href="https://github.com/AnsellMaximilian/dailee"
+                  target="_blank"
+                  rel="noreferrer"
+                  class="btn btn--secondary"
+                  ><img
+                    alt="Github logo"
+                    src="https://raw.githubusercontent.com/github/explore/master/topics/github/github.png"
+                /></a>
+              </div>
+            </article>
+          {% endfor %}
+        </section>
+      </div>
+    </article>
+    <article id="skills">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <section class="skill-sections">
+          {% for skillSet in skillSets %}
+
+            <article class="skillset">
+              <div class="skillset__header">
+                <h3>{{skillSet.label}}</h3>
+                <span></span>
+              </div>
+              <div class="skillset__list">
+                {% for skill in skillSet.skills %}
+                  <div class="skillset__item">
+                      <div class="skillset__item__icon">
+                        <img
+                          alt="{{skill.name}} logo"
+                          src="{{skill.icon}}"
+                        />
+                      </div>
+                      <div>{{skill.name}}</div>
+                  </div>
+                {% endfor %}
+              </div>
+            </article>
+          {% endfor %}
+        </section>
+      </div>
+    </article>
+  </main>
+{% endblock %}
