@@ -490,12 +490,6 @@ h3 {
   display: inline-block;
   margin-left: 1.25rem;
   font-size: 1.5rem;
-  animation: navbar-social-links-pulse-hor 5s infinite linear;
-}
-@media (max-width: 39.9375rem) {
-  .header .navbar__social-links a {
-    animation-name: navbar-social-links-pulse-ver;
-  }
 }
 @media (max-width: 39.9375rem) {
   .header .navbar__social-links {
