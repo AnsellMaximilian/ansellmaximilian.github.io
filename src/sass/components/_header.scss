@@ -112,9 +112,9 @@
         display: inline-block;
         margin-left: $spacing4;
         font-size: 1.5rem;
-        animation: navbar-social-links-pulse-hor 5s infinite linear;
+        // animation: navbar-social-links-pulse-hor 5s infinite linear;
         @include breakpoint-down(small) {
-          animation-name: navbar-social-links-pulse-ver;
+          // animation-name: navbar-social-links-pulse-ver;
         }
       }
       @include breakpoint-down(small) {
