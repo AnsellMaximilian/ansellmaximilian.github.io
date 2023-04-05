@@ -18,6 +18,7 @@ import bootstrap from "../assets/logos/bootstrap.png";
 import electron from "../assets/logos/electron.png";
 import typescript from "../assets/logos/typescript.png";
 import nextjs from "../assets/logos/nextjs.png";
+import contentful from "../assets/logos/contentful.png";
 
 const logoMap: { [key: string]: string } = {
   react,
@@ -39,6 +40,7 @@ const logoMap: { [key: string]: string } = {
   electron,
   typescript,
   nextjs,
+  contentful,
 };
 
 export default function logoMapper(name: string) {

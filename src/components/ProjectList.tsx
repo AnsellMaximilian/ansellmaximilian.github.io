@@ -1,6 +1,7 @@
 import rmpos from "../assets/projects/rumah-sehat-pos.png";
 import sjpos from "../assets/projects/sogo-jaya-pos.png";
 import rmcm from "../assets/projects/rumah-sehat-cm.png";
+import spnd from "../assets/projects/spando.png";
 import { Project } from "./Project";
 import { motion } from "framer-motion";
 
@@ -37,6 +38,14 @@ export const ProjectList = () => {
           githubLink="https://github.com/AnsellMaximilian/react-firebase-customer-manager"
           externalLink="https://rumah-sehat-pelanggan.netlify.app/"
           techs={["firebase", "react", "tailwind"]}
+        />
+        <Project
+          title="Spando"
+          description="Static Site Blog"
+          image={spnd}
+          githubLink="https://github.com/AnsellMaximilian/Spando"
+          externalLink="https://spando.vercel.app/"
+          techs={["tailwind", "react", "nextjs", "contentful"]}
         />
       </div>
       <div className="mt-8 text-center">
