@@ -51,6 +51,11 @@ export const Navbar = () => {
               Techs
             </a>
           </li>
+          <li>
+            <a href="#contact" className="hover:underline">
+              Contact
+            </a>
+          </li>
         </ul>
         <Menu as="nav" className="ml-auto block md:hidden relative">
           {({ open }) => (
@@ -72,6 +77,7 @@ export const Navbar = () => {
                   <MenuItem link="#timeline" text="Timeline" />
                   <MenuItem link="#projects" text="Projects" />
                   <MenuItem link="#skills" text="Techs" />
+                  <MenuItem link="#contact" text="Contact" />
                 </Menu.Items>
               </Transition>
             </>

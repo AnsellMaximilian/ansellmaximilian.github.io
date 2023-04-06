@@ -3,7 +3,7 @@ import { HiMail } from "react-icons/hi";
 
 export const Contact = () => {
   return (
-    <article className="p-4 rounded-lg">
+    <article className="p-4 rounded-lg" id="contact">
       <h2 className="text-center text-2xl font-semibold uppercase">Contact</h2>
       <ul className="mt-8 flex flex-wrap justify-center gap-2">
         <li>
