@@ -2,6 +2,7 @@ import rmpos from "../assets/projects/rumah-sehat-pos.png";
 import sjpos from "../assets/projects/sogo-jaya-pos.png";
 import rmcm from "../assets/projects/rumah-sehat-cm.png";
 import spnd from "../assets/projects/spando.png";
+import rsdb from "../assets/projects/rumah-sehat-dashboard.png";
 import { Project } from "./Project";
 import { motion } from "framer-motion";
 
@@ -46,6 +47,14 @@ export const ProjectList = () => {
           githubLink="https://github.com/AnsellMaximilian/Spando"
           externalLink="https://spando.vercel.app/"
           techs={["tailwind", "react", "nextjs", "contentful"]}
+        />
+        <Project
+          title="Sales Dashboard"
+          description="Sales Metrics Display"
+          image={rsdb}
+          githubLink="https://github.com/AnsellMaximilian/rumah-sehat-sales-dashboard"
+          externalLink="https://rumahsehatdashboard.vercel.app/"
+          techs={["tailwind", "react", "nextjs"]}
         />
       </div>
       <div className="mt-8 text-center">
