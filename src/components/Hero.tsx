@@ -17,7 +17,7 @@ export default function Hero() {
               Ansell Maximilian
             </h1>
             <h2 className="text-base md:text-xl">
-              Information Systems Graduate
+              Web Developer
             </h2>
           </div>
           <div
@@ -26,10 +26,7 @@ export default function Hero() {
           >
             <h3 className="text-xl font-medium">About</h3>
             <p className="text-justify indent-8 hyphens-auto">
-              I am an Information Systems fresh graduate with concentration on
-              Enterprise Applications based in Indonesia. A self-taught web
-              developer/programmer looking to get new opportunities to work and
-              learn.
+              I am a Information Systems graduate with a concentration on Enterprise Applications. I also have a keen interest in web development and have been self-taught on it since my introduction to it during a university course. I have been able to use my web development skills in all parts of my life, including my current job. I am actively looking for new oppurtunities to get into the tech industry and learn much more.
             </p>
           </div>
         </motion.div>
