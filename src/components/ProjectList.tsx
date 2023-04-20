@@ -53,7 +53,7 @@ export const ProjectList = () => {
           description="Sales Metrics Display"
           image={rsdb}
           githubLink="https://github.com/AnsellMaximilian/rumah-sehat-sales-dashboard"
-          externalLink="https://rumahsehatdashboard.vercel.app/"
+          externalLink="https://rumahsehat-salesdashboard.vercel.app/"
           techs={["tailwind", "react", "nextjs"]}
         />
       </div>
