@@ -156,3 +156,11 @@ export default async function Home({ params: { slug } }: Props) {
     </>
   );
 }
+
+export async function generateStaticParams() {
+  const projects = await fetchProjects();
+
+  return projects.map((project) => ({
+    slug: project.slug,
+  }));
+}
